@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head >
+	<title>Entraînement Javascript</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="utf-8"/>
+	<script src="script.js"></script>
+</head>
+
+<body id="contenu">
+	<header id="parties">
+		<h1>Decouvrez le nombre mysterieux</h1>
+		<h4>Vous disposez de 7 essais en tout, <br>
+		le nombre est compris entre 1 et 100</h4>
+	</header>
+	<main>
+		<form>
+			<fieldset id="field">
+				<div class="commandes">
+					<div class="saisie">
+						<label for="proposition"> Proposition: </label>
+						<input type="text" id="proposition" disabled>
+					</div>
+					<div id="menuBoutons">
+						<input type="reset" value="Nouveau jeu" id="nouveau" onclick="funcNouveauJeu()">
+						<input type="button" value="Solution" id="solution" onclick="funcSolution()" disabled>
+						<input type="button" value="Proposer" id="proposer" onclick="funcProposer()" disabled>
+					</div>
+				</div>
+
+				<div class="informations">
+					<div class="informations">
+						<label for="essaiNum"> Tentatives: </label>
+						<input type="text" id="essaiNum" disabled>
+					</div>
+					<div class="informations">
+						<label for="message"> Message: </label>
+						<input type="text" id="message" disabled>
+					</div>
+					<div>
+						<label for="reponses"> Reponses: </label>
+						<input type="text" id="reponses" disabled>
+					</div>
+				</div>
+
+				<div id="test">
+
+				</div>
+			</fieldset>
+		</form>
+	</main>
+</body>
+</html>
